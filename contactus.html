@@ -1,0 +1,71 @@
+<!--
+CWB205 JavaScript - Project
+filename: contactUs.html
+author: Amandine Velamala
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Us Page</title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="mainmenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" class="dropdownButton">Fun Games</a>
+					<ul class="dropdown">
+      					<li><a href="rockpaper.html">Rock Paper Scissors</a></li>
+      					<li><a href="tictactoe.html">Tic Tac Toe</a></li>
+      				</ul>
+      			</li>
+				<li><a href="#"  class="dropdownButton">Learning Games</a>
+					<ul class="dropdown">
+      					<li><a href="natparks.html">National Parks</a></li>
+      					<li><a href="mult.html">Multiplication</a></li>
+      				</ul>
+      			</li>
+      			<li><a href="contactus.html">Contact Us</a></li>
+      		</ul>
+      	</nav>
+	</header>
+
+	<h1>Contact Us</h1>
+
+	<form id="contactForm" method="post" novalidate="novalidate" action= "/sendmsg">
+		<div class="firstName">
+			<label for="firstName">First Name:</label>
+			<span id="errorfirstName" class="error"></span>
+			<input type="text" id="firstName" name="firstName">
+		</div>
+		<div class="lastName">
+			<label for="lastName">Last Name:</label>
+			<span id="errorlastName" class="error"></span>
+			<input type="text" id="lastName" name="lastName">
+		</div>
+		<div class="email">
+			<label for="email">Email:</label>
+			<span id="erroremail" class="error"></span>
+			<input type="email" id="email" name="email">
+		</div>
+		<div>
+			<label for="statesDropdown">State: type the 1st letter of your state, then selects from the dropdown menu</label>
+			<span id="errorstatesDropdown" class="error"></span>
+			<input type="text" id="stateFirstLetter" name="stateFirstLetter" maxlength = "1">
+			<select id="statesDropdown" name="state"></select>
+		</div>
+		<div class="message">
+			<label for="message"  id="labelmessage">Message (max 200 characters)</label>
+			<span id="errormessage" class="error"></span>
+			<textarea id="message" name="message" rows="4"></textarea>
+		</div>
+		<div class="submitForm">
+			<input id="submitForm" type="submit" value="Submit">
+		</div>
+	</form>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/contactus.js"></script>
+</body>
+</html>

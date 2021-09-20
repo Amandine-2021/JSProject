@@ -1,0 +1,45 @@
+<!--
+CWB205 JavaScript - Project
+filename: natParks.html
+author: Amandine Velamala
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Colorado National Parks Game</title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="mainmenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" class="dropdownButton">Fun Games</a>
+					<ul class="dropdown">
+      					<li><a href="rockpaper.html">Rock Paper Scissors</a></li>
+      					<li><a href="tictactoe.html">Tic Tac Toe</a></li>
+      				</ul>
+      			</li>
+				<li><a href="#"  class="dropdownButton">Learning Games</a>
+					<ul class="dropdown">
+      					<li><a href="natparks.html">National Parks</a></li>
+      					<li><a href="mult.html">Multiplication</a></li>
+      				</ul>
+      			</li>
+      			<li><a href="contactus.html">Contact Us</a></li>
+      		</ul>
+      	</nav>
+	</header>
+	<h1>Colorado National Parks Game</h1>
+	<div id ="box" class="instructions">The goal of the game is to find a national park on the map.<br><br>
+	<span id="whichPark">Click on </span><span id="mysteryPark"></span> 
+		<button id="playButton">Play Again</button></div>
+	<div id="map">
+	</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/natparks.js"></script>
+</body>
+</html>

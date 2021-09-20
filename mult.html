@@ -1,0 +1,51 @@
+<!--
+CWB205 JavaScript - Project
+filename: mult.html
+author: Amandine Velamala
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Multiplication Game</title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="mainmenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" class="dropdownButton">Fun Games</a>
+					<ul class="dropdown">
+      					<li><a href="rockpaper.html">Rock Paper Scissors</a></li>
+      					<li><a href="tictactoe.html">Tic Tac Toe</a></li>
+      				</ul>
+      			</li>
+				<li><a href="#"  class="dropdownButton">Learning Games</a>
+					<ul class="dropdown">
+      					<li><a href="natparks.html">National Parks</a></li>
+      					<li><a href="mult.html">Multiplication</a></li>
+      				</ul>
+      			</li>
+      			<li><a href="contactus.html">Contact Us</a></li>
+      		</ul>
+      	</nav>
+	</header>
+	<h1>Multiplication</h1>
+	<p>Enter your answer</p>
+	<div id="box" class="equation">
+		<span id="multiplicand"></span> x 
+		<span id="multiplier"></span> = 
+		<form id="multForm">
+			<input type="text" name="answer" id="answer">
+			<input id="submitanswer" type="submit" class="submit" value="Submit">
+		</form>
+		<div id="resultMsg"></div>
+				
+		<div id="continue" class="playAgain"></div>
+	</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/mult.js"></script>
+</body>
+</html>

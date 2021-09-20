@@ -1,0 +1,50 @@
+<!--
+CWB205 JavaScript - Project
+filename: rockPaper.html
+author: Amandine Velamala
+-->
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>Rock Paper Scissors Game</title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="mainmenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" class="dropdownButton">Fun Games</a>
+					<ul class="dropdown">
+      					<li><a href="rockpaper.html">Rock Paper Scissors</a></li>
+      					<li><a href="tictactoe.html">Tic Tac Toe</a></li>
+      				</ul>
+      			</li>
+				<li><a href="#"  class="dropdownButton">Learning Games</a>
+					<ul class="dropdown">
+      					<li><a href="natparks.html">National Parks</a></li>
+      					<li><a href="mult.html">Multiplication</a></li>
+      				</ul>
+      			</li>
+      			<li><a href="contactus.html">Contact Us</a></li>
+      		</ul>
+      	</nav>
+	</header>
+	<h1>Rock, Paper, Scissors Game</h1>
+	<p class="instructions">To play, click on one icon: rock, paper or scissors<p>
+	
+	<button name="rock" type="button" id="rock" class="icons"><img src="img/rock.jpg" alt="rock"> </button>
+	<button name="paper" type="button" id="paper" class="icons"><img src="img/paper.jpg" alt="paper"></button>
+	<button name="scissors" type="button" id="scissors" class="icons"><img src="img/scissors.jpg" alt="scissors"></button>
+	<div id="result">
+		<div id="player"></div>
+		<div id="webpage"></div>
+		<div id="winner"></div>
+		<div id="playAgain"><button type="button" id="playButton">Play Again</button></div>
+	</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/rockpaper.js"></script>
+</body>
+</html>
